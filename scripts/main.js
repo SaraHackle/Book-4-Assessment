@@ -1,14 +1,14 @@
-import { FoodTruck } from "./FoodTruck.js"
+import { FoodTruck } from "./FoodTruck.js";
 
-const mainContainer = document.querySelector("#container")
+const mainContainer = document.querySelector("#container");
 
 const renderAllHTML = () => {
-    mainContainer.innerHTML = FoodTruck()
-}
+  mainContainer.innerHTML = FoodTruck();
+};
 
-renderAllHTML()
+renderAllHTML();
 
-document.addEventListener("stateChanged", event => {
-    console.log("State of data has changed. Regenerating HTML...")
-    renderAllHTML()
-})
+document.addEventListener("stateChanged", (event) => {
+  console.log("State of data has changed. Regenerating HTML...");
+  renderAllHTML();
+});
